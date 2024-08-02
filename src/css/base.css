@@ -1,0 +1,206 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16pt;
+  --color-text: #ece8e1;
+  --color-bg: #060606;
+  --color-link: inherit;
+  --color-link-hover: #b42429;
+  --c1: #b42429;
+  --c2: #588B8B;
+  --c3: #9882AC;
+  --page-padding: 1.5rem 2rem;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: 'Neue Montreal', -apple-system, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+  cursor: pointer;
+  transition: color 250ms;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+  /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+  outline: none;
+  background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+  background: transparent;
+}
+
+a:focus-visible {
+  /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+  outline: 1px solid rgb(0, 255, 64);
+  background: transparent;
+}
+img{
+    width:100%;
+    height: auto;
+}
+.unbutton {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.unbutton:focus {
+  outline: none;
+}
+
+main {
+  counter-reset: section;
+}
+
+.splitting .word {
+  white-space: nowrap;
+}
+
+.splitting .font-sub .word {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.char-wrap {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+/* Global Classes */
+.page-width >  div{
+    max-width: 1600px;
+    margin:0 auto;
+}
+.h1{
+    font-size: clamp(2rem,8vw, 5rem);
+    font-weight: 500;
+}
+.emph{
+    font-style: italic;
+    color: var(--c1);
+}
+.if-br-90{
+    filter: brightness(0.9);
+}
+.if-br-80{
+    filter: brightness(0.8);
+}
+.if-br-70{
+    filter: brightness(0.7);
+}
+.if-br-60{
+    filter: brightness(0.6);
+}
+.if-br-50{
+    filter: brightness(0.5);
+}
+.if-br-40{
+    filter: brightness(0.4);
+}
+.if-br-30{
+    filter: brightness(0.3);
+}
+.if-br-20{
+    filter: brightness(0.2);
+}
+.if-br-10{
+    filter: brightness(0.1);
+}
+.if-br-0{
+    filter: brightness(0);
+}
+
+/* Header */
+header{
+    position: fixed;
+    top:0.5rem;
+    left:0.5rem;
+    background-color: rgba(255,255,255,0.1);
+    /* color: #0d0d0d; */
+    border-radius: 10px;
+    box-shadow:inset 0 0 10px -3px rgba(255,255,255,0.5);
+    z-index: 99999;
+}
+header nav ul{
+    padding:5px 20px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul a{
+    text-transform: uppercase;
+}

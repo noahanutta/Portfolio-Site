@@ -1,0 +1,110 @@
+.home-banner{
+    display: block;
+    position: relative;
+}
+.home-banner .banner-container{
+    position: relative;
+}
+.home-banner .banner-container .underlay{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+.home-banner .banner-container .underlay img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.home-banner .banner-container .overlay{
+    min-height: 80svh;
+    position: relative;
+    z-index: 20;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+.home-banner .banner-container .underlay::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, var(--c1) 0%, transparent 100%);
+    mix-blend-mode: soft-light;
+    z-index: 1;
+}
+.home-banner .banner-container .overlay p{
+    width: 100%;
+    max-width: 1000px;
+    margin:0 auto;
+}
+.home-banner .banner-container .overlay p.h1{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.home-banner .banner-container .overlay p.subtext{
+    font-size: 1.2rem;
+}
+/* Link Grid */
+.pageGrid{
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-item{
+    display: block;
+    position: relative;
+    border: 2px solid var(--c1);
+    margin:0 -2px -2px 0;
+    min-height: 40svh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.grid-item .underlay{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+.grid-item .underlay img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: all 250ms;
+}
+.grid-item:hover .underlay img{
+    filter: brightness(0.3) grayscale(1);
+}
+.grid-item-content{
+    position: relative;
+    z-index:20;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.grid-item-content h2{
+    font-size: clamp(2.5rem,8vw,5rem);
+    font-family: 'NeueBit';
+    font-weight: 700;
+}

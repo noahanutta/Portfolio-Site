@@ -1,18 +1,4 @@
 @font-face {
-  font-family: NeueBit;
-  src: url("PPNeueBit-Regular.5bf93590.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: NeueBit;
-  src: url("PPNeueBit-Bold.63723a84.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
   font-family: Mondwest;
   src: url("PPMondwest-Regular.71a0828a.woff2") format("woff2");
   font-weight: 400;
@@ -27,58 +13,44 @@
 }
 
 @font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Regular.8974c5ce.woff2") format("woff2");
+  font-family: Radio;
+  src: url("PPRadioGrotesk-Regular.382c869a.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Bold.3f0787c2.woff2") format("woff2");
-  font-weight: 700;
+  font-family: Radio;
+  src: url("PPRadioGrotesk-Bold.77b282ed.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Book.005205b5.woff2") format("woff2");
+  font-family: Radio;
+  src: url("PPRadioGrotesk-Light.e6ca402b.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Medium.cd81da59.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Italic.95afd035.woff2") format("woff2");
+  font-family: Radio;
+  src: url("PPRadioGrotesk-RegularItalic.92d53e4d.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Bold.3f0787c2.woff2") format("woff2");
+  font-family: Radio;
+  src: url("PPRadioGrotesk-BoldItalic.7be98cb0.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Book.005205b5.woff2") format("woff2");
+  font-family: Radio;
+  src: url("PPRadioGrotesk-LightItalic.800baa67.woff2") format("woff2");
   font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Neue Montreal;
-  src: url("PPNeueMontreal-Medium.cd81da59.woff2") format("woff2");
-  font-weight: 500;
   font-style: italic;
 }
 /*# sourceMappingURL=index.70dab844.css.map */

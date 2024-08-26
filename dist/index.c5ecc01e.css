@@ -125,8 +125,14 @@
   aspect-ratio: 1;
   object-fit: cover;
   z-index: 1;
+  max-width: 500px;
   display: block;
   position: relative;
+}
+
+.about-me {
+  background-color: var(--white);
+  color: var(--eerie-black);
 }
 
 .about-me-title {
@@ -138,7 +144,35 @@
 .about-me p {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 2rem 2rem;
   font-size: 1.1rem;
+}
+
+.about-me img {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+.about-me .content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (width <= 720px) {
+  .sk-g img {
+    max-width: 300px;
+  }
+
+  .twocl-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (width <= 540px) {
+  .home-banner .banner-container .overlay .h1 {
+    white-space: wrap;
+    height: 2.2em;
+  }
 }
 /*# sourceMappingURL=index.c5ecc01e.css.map */

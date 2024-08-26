@@ -65,7 +65,6 @@
     font-size: 1.5rem;
 }
 .fodas-container{
-    /* background: var(--pomp-and-power); */
     background: #000;
 }
 .fodas{
@@ -113,8 +112,12 @@
     position: relative;
     aspect-ratio: 1/1;
     object-fit: cover;
-    /* max-width:500px; */
+    max-width:500px;
     z-index:1;
+}
+.about-me{
+    background-color: var(--white);
+    color:var(--eerie-black);
 }
 .about-me-title{
     font-size: clamp(4rem,12vw,8rem);
@@ -122,8 +125,32 @@
     text-transform: uppercase;
 }
 .about-me p{
-    padding: 1rem;
+    padding: 0 2rem 2rem 2rem;
     max-width: 1000px;
     margin:0 auto;
     font-size: 1.1rem;
 }
+.about-me img{
+    display: block;
+    max-width: 1000px;
+    margin:0 auto;
+    margin-bottom: 2rem;
+}
+.about-me .content{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+@media screen and (max-width:720px){
+    .sk-g img{
+        max-width:300px;
+    }
+    .twocl-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 540px){
+    .home-banner .banner-container .overlay .h1{
+        white-space:wrap;
+        height:2.2em;
+    }
+  }

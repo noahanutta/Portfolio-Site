@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"l6uFh":[function(require,module,exports) {
+})({"bSekw":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -8211,6 +8211,6 @@ _getGSAP() && gsap.registerPlugin(Observer);
     return Splitting;
 });
 
-},{}]},["l6uFh","iOY1C"], "iOY1C", "parcelRequirea625")
+},{}]},["bSekw","iOY1C"], "iOY1C", "parcelRequirea625")
 
 //# sourceMappingURL=index.76f732d5.js.map

@@ -141,14 +141,24 @@
   font-weight: 800;
 }
 
-.about-me p {
+.about-me p, .about-me small {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem 2rem;
   font-size: 1.1rem;
+  line-height: 1.1;
+  display: block;
 }
 
-.about-me img {
+.about-me small {
+  margin-top: -1rem;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.about-me img, .about-me video {
+  border-radius: 7px;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto 2rem;
   display: block;
@@ -157,6 +167,32 @@
 .about-me .content {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.about-me ul {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 4rem;
+  font-size: 1.1rem;
+  list-style: circle;
+}
+
+footer {
+  background-color: var(--eerie-black);
+  color: var(--dark-spring-green);
+  padding: 2rem;
+}
+
+.footer-note {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.footer-note a {
+  color: var(--white);
+  font-weight: bold;
 }
 
 @media screen and (width <= 720px) {
@@ -173,6 +209,10 @@
   .home-banner .banner-container .overlay .h1 {
     white-space: wrap;
     height: 2.2em;
+  }
+
+  .about-me img, .about-me video {
+    border-radius: 0;
   }
 }
 /*# sourceMappingURL=index.c5ecc01e.css.map */

@@ -1,0 +1,1 @@
+let e=document.querySelector(".menuButton"),t=document.querySelector(".menu"),c=!1;e.addEventListener("click",()=>{c?(t.classList.remove("activo"),e.classList.remove("activo"),e.innerHTML="Menu",c=!1):(t.classList.add("activo"),e.innerHTML="Close",e.classList.add("activo"),c=!0)});

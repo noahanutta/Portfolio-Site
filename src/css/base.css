@@ -439,6 +439,10 @@ nav .hr{
   font-weight: 600;
   font-size: 1.5rem;
 }
+section p a, section li a{
+  color: var(--dark-spring-green);
+  font-weight: bold;
+}
 
 @media screen and (max-width: 540px){
   :root{

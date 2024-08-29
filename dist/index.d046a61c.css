@@ -382,6 +382,11 @@ nav .hr {
   display: grid;
 }
 
+section p a, section li a {
+  color: var(--dark-spring-green);
+  font-weight: bold;
+}
+
 @media screen and (width <= 540px) {
   :root {
     font-size: 14pt;

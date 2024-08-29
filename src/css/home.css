@@ -124,21 +124,52 @@
     font-weight: 800;
     text-transform: uppercase;
 }
-.about-me p{
+.about-me p, .about-me small{
+    display: block;
     padding: 0 2rem 2rem 2rem;
     max-width: 1000px;
     margin:0 auto;
     font-size: 1.1rem;
+    line-height: 1.1;
 }
-.about-me img{
+.about-me small{
+    margin-top:-1rem;
+    font-size:0.9rem;
+    font-style: italic;
+}
+.about-me img, .about-me video{
     display: block;
+    width:100%;
     max-width: 1000px;
     margin:0 auto;
     margin-bottom: 2rem;
+    border-radius:7px;
 }
 .about-me .content{
     padding-top:2rem;
     padding-bottom: 2rem;
+}
+.about-me ul{
+    list-style:circle;
+    padding: 0 2rem 2rem 4rem;
+    max-width: 1000px;
+    margin:0 auto;
+    font-size: 1.1rem;
+}
+footer{
+    padding: 2rem;
+    background-color: var(--eerie-black);
+    color: var(--dark-spring-green);
+}
+.footer-note{
+    margin:0 auto;
+    max-width: 600px;
+    text-align: center;
+    font-style: italic;
+}
+.footer-note a{
+    color: var(--white);
+    font-weight:bold;
 }
 @media screen and (max-width:720px){
     .sk-g img{
@@ -152,5 +183,8 @@
     .home-banner .banner-container .overlay .h1{
         white-space:wrap;
         height:2.2em;
+    }
+    .about-me img, .about-me video{
+        border-radius:0px;
     }
   }
